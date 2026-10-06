@@ -1,0 +1,23 @@
+:root{--bg:#e8eedd;--fg:#17261a;--panel:#f6f9ee;--bd:#bccaa8;--ac:#2f6b3a;--chip:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e160f;--fg:#e1ecd9;--panel:#172118;--bd:#2e4130;--ac:#8fd49a;--chip:#1f2c20}}
+:root[data-theme="dark"]{--bg:#0e160f;--fg:#e1ecd9;--panel:#172118;--bd:#2e4130;--ac:#8fd49a;--chip:#1f2c20}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:linear-gradient(var(--panel),var(--bg) 380px);color:var(--fg);font:15px/1.45 Nunito,"Segoe UI",system-ui,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:16px 12px 28px}
+header h1{font:600 clamp(26px,5vw,38px)/1.1 Fraunces,Georgia,serif;margin:6px 0 4px}
+header p{margin:0 0 12px;opacity:.75;max-width:60ch}
+#stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+#stats span{background:var(--chip);border:1px solid var(--bd);border-radius:999px;padding:4px 12px;font-weight:700}
+#stats b{font-variant-numeric:tabular-nums}
+canvas{display:block;width:100%;border:3px solid var(--panel);border-radius:18px;box-shadow:0 10px 30px rgba(10,30,10,.25)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0}
+button{font:700 14px Nunito,system-ui,sans-serif;padding:8px 16px;border:1px solid var(--bd);background:var(--panel);color:var(--fg);border-radius:999px;cursor:pointer}
+button:hover{border-color:var(--ac)}
+#play{background:var(--ac);border-color:var(--ac);color:var(--bg)}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+details{background:var(--panel);border:1px solid var(--bd);border-radius:14px;padding:2px 14px 14px}
+summary{cursor:pointer;font:600 17px Fraunces,Georgia,serif;padding:10px 0}
+#ctl{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px 18px}
+#ctl label{display:flex;flex-direction:column;gap:2px;font-size:13px}
+#ctl input,input[type=range]{width:100%;accent-color:var(--ac)}
+select{font:inherit;padding:6px 12px;border-radius:999px;border:1px solid var(--bd);background:var(--panel);color:var(--fg)}

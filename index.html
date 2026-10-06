@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ecosistema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body><main>
+<header><h1>Ecosistema vivo</h1><p>Plantas, herbívoros y carnívoros en una cadena alimenticia autónoma. Pulsa «Controlar superherbívoro» para jugar.</p></header>
+<div id="stats"></div>
+<canvas id="cv"></canvas>
+<div class="bar">
+<button id="play">Pausa</button><button id="reset">Reiniciar</button>
+<button id="addH">+ Herbívoro</button><button id="addC">+ Carnívoro</button><button id="addP">Controlar superherbívoro (WASD / flechas / arrastrar)</button><button id="dash">Embestida (Espacio)</button><button id="shoot">Disparar (F)</button>
+<label>Mapa <select id="theme"><option value="nature">Naturaleza</option><option value="war">Zona de guerra</option></select></label><label><input type="checkbox" id="snd" checked> Sonido</label><label><input type="checkbox" id="day" checked> Día y noche</label><label><input type="checkbox" id="dbg"> Modo debug</label>
+</div>
+<details open><summary>Parámetros del ecosistema</summary><div id="ctl"></div></details>
+</main>
+<script src="main.js"></script></body></html>
